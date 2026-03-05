@@ -6,4 +6,4 @@
 [![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=hyunseok888)](https://solved.ac/hyunseok888)
 
 ## 📂 폴더 구조 및 푼 문제 수
-- **현재까지 푼 문제 수:** 2 개
+- **현재까지 푼 문제 수:** 3 개
