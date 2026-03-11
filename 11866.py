@@ -4,6 +4,7 @@
 
 # 핵심
 # (현재 위치 + K - 1) % N = 현재 제거해야할 사람의 Index
+# 답 : idx = (idx + K - 1) % len(arr)
 # 지정된 Index의 element는 다른 array로 이동
 
 n, k = map(int, input().split())
