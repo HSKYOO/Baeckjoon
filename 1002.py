@@ -37,6 +37,7 @@ nlocation = []
 for i in range(tries):
 
     short_r = 0 # r1, r2 중 가장 작은 반지름
+    long_r = 0
 
     x1, y1, r1, x2, y2, r2 = map(int, input().split())
 
@@ -44,11 +45,41 @@ for i in range(tries):
 
     if(r1 <= r2):
         short_r = r1
+        long_r = r2
     else:
         short_r = r2
+        long_r = r1
     
-    sqre_r = short_r^2   # 가장 작은 원의 반지름 제곱
+    sqre_sr = short_r^2   # 가장 작은 원의 반지름 제곱
+    sqre_lr = long_r^2
+
+    c1 = sqre_sr + sqre_lr
+    c2 = sqre_lr - sqre_sr
+
+    if(x1 == x2 and y1 == y2 and r1 == r2):
+        nlocation.append(-1)
+        continue
     
+    if(dsq > c1):
+        nlocation.append(0)
+        continue
+    elif(dsq == c1 and dsq > c2):
+        nlocation.append(1)
+        continue
+    elif(dsq < c1 and dsq > c2):
+        nlocation.append(2)
+        continue
+    elif(dsq < c1 and dsq == c2):
+        nlocation.append(1)
+        continue
+    elif(dsq < c2):
+        nlocation.append(0)
+        continue
+
+
+for i in nlocation:
+    print(i)    
+
 
 
 
