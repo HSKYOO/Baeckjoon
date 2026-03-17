@@ -41,7 +41,7 @@ for i in range(tries):
 
     x1, y1, r1, x2, y2, r2 = map(int, input().split())
 
-    dsq = (x1 - x2)^2 + (y1 - y2)^2     # 두점 사이 거리 제곱
+    dsq = (x1 - x2)**2 + (y1 - y2)**2     # 두점 사이 거리 제곱
 
     if(r1 <= r2):
         short_r = r1
@@ -50,11 +50,11 @@ for i in range(tries):
         short_r = r2
         long_r = r1
     
-    sqre_sr = short_r^2   # 가장 작은 원의 반지름 제곱
-    sqre_lr = long_r^2
+    sqre_sr = short_r**2   # 가장 작은 원의 반지름 제곱
+    sqre_lr = long_r**2
 
-    c1 = sqre_sr + sqre_lr
-    c2 = sqre_lr - sqre_sr
+    c1 = (short_r + long_r) ** 2
+    c2 = (long_r - short_r) ** 2
 
     if(x1 == x2 and y1 == y2 and r1 == r2):
         nlocation.append(-1)
