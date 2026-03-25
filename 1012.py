@@ -10,3 +10,6 @@ m, n, k = map(int, input().split())
 arr = [[]]
 
 # git 확인
+
+for i in repeat:
+    x, y = map(int, input().split())
