@@ -4,11 +4,11 @@
 # 탐색이 끝난 후 기존 위치를 제외한 탐색 했던 칸 0으로 바꿈
 # 지정된 횟수까지 반복 후 count 출력
 
-repeat = int(input())
-
-m, n, k = map(int, input().split())     # m : 가로길이 // n : 세로길이 // k : 배추가 심어져있는 위치의 갯수
-arr = [[0 for _ in range(m)] for _ in range(n)]     # 배열 0 으로 초기화
-
+repeat = int(input())       # 반복횟수
 
 for i in repeat:
-    x, y = map(int, input().split())
+    m, n, k = map(int, input().split())     # m : 가로길이 // n : 세로길이 // k : 배추가 심어져있는 위치의 갯수
+    arr = [[0 for _ in range(m)] for _ in range(n)]     # 배열 0 으로 초기화
+
+    for j in k:         # 배추 갯수만큼 repeat
+        x, y = map(int, input().split())
