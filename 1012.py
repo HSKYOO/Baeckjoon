@@ -12,3 +12,7 @@ for i in repeat:
 
     for j in k:         # 배추 갯수만큼 repeat
         x, y = map(int, input().split())
+        arr[[x], y] = 1                     # (x, y) = 1
+    
+    # 탐색
+    
