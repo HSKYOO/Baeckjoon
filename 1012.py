@@ -7,7 +7,7 @@
 repeat = int(input())
 
 m, n, k = map(int, input().split())     # m : 가로길이 // n : 세로길이 // k : 배추가 심어져있는 위치의 갯수
-arr = [[0 for _ in range(m)] for _ in range(n)]
+arr = [[0 for _ in range(m)] for _ in range(n)]     # 배열 0 으로 초기화
 
 
 for i in repeat:
