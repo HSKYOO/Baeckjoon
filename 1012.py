@@ -16,3 +16,9 @@ for i in repeat:
     
     # 탐색
     
+
+def search(arr):
+    count = 0
+    for i in arr:
+        if(i == 1):
+            count += 1
