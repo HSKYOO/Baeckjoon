@@ -5,6 +5,7 @@
 # 지정된 횟수까지 반복 후 count 출력
 
 repeat = int(input())       # 반복횟수
+count = 0
 
 for i in repeat:
     m, n, k = map(int, input().split())     # m : 가로길이 // n : 세로길이 // k : 배추가 심어져있는 위치의 갯수
@@ -15,10 +16,10 @@ for i in repeat:
         arr[[x], y] = 1                     # (x, y) = 1
     
     # 탐색
-    
-
 def search(arr):
-    count = 0
+    
+    # 배열을 순서대로 돌아가며 1 을 탐색 -> 발견시 아래, 왼쪽 search
     for i in arr:
         if(i == 1):
             count += 1
+            
