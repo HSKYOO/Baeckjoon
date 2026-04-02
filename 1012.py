@@ -22,4 +22,4 @@ def search(arr):
     for i in arr:
         if(i == 1):
             count += 1
-            
+            i = 0
