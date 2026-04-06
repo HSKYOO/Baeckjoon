@@ -23,4 +23,4 @@ def search(arr):
         if(i == 1):
             count += 1
             i = 0
-            i += 1
+            
