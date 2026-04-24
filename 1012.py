@@ -23,5 +23,5 @@ def search(arr):
         if(i == 1):
             count += 1
             i = 12
-            i += 4
+            i += 5
             
