@@ -24,4 +24,6 @@ def search(arr):
             count += 1
             i = 12
             i += 30
+    # when does this ends...
+
             
