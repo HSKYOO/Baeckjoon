@@ -31,7 +31,7 @@ def search(arr):
     #
     # i want to go home
     # one day i might 
-    
+    # 순간의 최고의 선택이 최선의 선택이 아니라는것
 
 
             
