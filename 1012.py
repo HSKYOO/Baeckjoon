@@ -32,6 +32,7 @@ def search(arr):
     # i want to go home
     # one day i might 
     # 순간의 최고의 선택이 최선의 선택이 아니라는것
+    # 그렇기에 지금의 쾌락이 아닌 미래의 행복을 쟁취하는 것
 
 
             
